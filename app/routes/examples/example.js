@@ -5,5 +5,13 @@ export default Route.extend({
     const id = +params.example_id
     console.log('id is ', id)
     return this.get('store').findRecord('example', id)
+  },
+  actions: {
+    deleteExample (example) {
+      console.log('delete!', example.get('text'))
+      example.destroyRecord()
+        .then(() => this.transitionTo('examples'))
+        .catch(console.error)
+    }
   }
 })
