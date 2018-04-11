@@ -1,2 +1,4 @@
 <h3>Example {{model.id}}: {{model.text}}</h3>
-<button {{action 'deleteExample' model}} >Delete</button>
+<button {{action 'deleteExample' model}}> Delete</button>
+{{edit-example example=model
+               editExample='patchExample'}}

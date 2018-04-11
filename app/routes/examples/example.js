@@ -12,6 +12,10 @@ export default Route.extend({
       example.destroyRecord()
         .then(() => this.transitionTo('examples'))
         .catch(console.error)
+    },
+    patchExample (example) {
+      console.log('edit!', example.get('text'))
+      example.save()
     }
   }
 })
