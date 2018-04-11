@@ -11,6 +11,9 @@ Router.map(function () {
   this.route('sign-in')
   this.route('change-password')
   this.route('users')
+  this.route('examples', function () {
+    this.route('example', {path: '/:example_id'})
+  })
 })
 
 export default Router
