@@ -1,7 +1,8 @@
+{{#link-to 'examples.index'}}Back to all Examples{{/link-to}}
 <h3>Example {{model.id}}: {{model.text}}</h3>
 <button {{action 'deleteExample' model}}> Delete</button>
 
-<h5>Update Example:</h5>
+<h5>Edit this Example:</h5>
 <form {{action 'patchExample' model on='submit'}}>
  {{input placeholder='Edit Text' value=model.text}}
  <button> Save</button>
