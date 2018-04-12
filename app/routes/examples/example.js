@@ -14,7 +14,7 @@ export default Route.extend({
         .catch(console.error)
     },
     patchExample (example) {
-      console.log('edit!', example.get('text'))
+      console.log('edit!', example.get('user'))
       example.save()
     }
   }

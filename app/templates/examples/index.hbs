@@ -1,7 +1,11 @@
 <h3> Everyone's Examples </h3>
 <p> Click an example to see more info! </p>
 {{#each model as |example|}}
-<li>{{#link-to 'examples.example' example}}Example {{example.id}}{{/link-to}} </li>
+<li>{{#link-to 'examples.example' example}}Example {{example.id}}
+  {{#if example.editable}}
+  (editable)
+  {{/if}}
+  {{/link-to}} </li>
 {{/each}}
 
 {{create-example-form createExample='addExample'}}

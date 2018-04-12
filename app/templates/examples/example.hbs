@@ -1,5 +1,7 @@
 {{#link-to 'examples.index'}}Back to all Examples{{/link-to}}
 <h3>Example {{model.id}}: {{model.text}}</h3>
+{{#if model.editable}}
+
 <button {{action 'deleteExample' model}}> Delete</button>
 
 <h5>Edit this Example:</h5>
@@ -7,3 +9,4 @@
  {{input placeholder='Edit Text' value=model.text}}
  <button> Save</button>
 </form>
+{{/if}}
