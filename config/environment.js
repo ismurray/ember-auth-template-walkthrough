@@ -50,7 +50,7 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/rails-api-template-for-ember-auth-training';
+    ENV.rootURL = '/ember-auth-template-walkthrough';
     ENV.locationType = 'hash';
     ENV.apiHost = 'https://ember-auth-practice-rails-api.herokuapp.com/';
   }
