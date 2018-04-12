@@ -10,6 +10,7 @@ export default Component.extend({
     createExample () {
       console.log('new example is ', this.get('newExample'))
       this.sendAction('createExample', this.get('newExample'))
+      this.set('newExample.text', '')
     }
   }
 })
